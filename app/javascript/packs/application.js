@@ -10,7 +10,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import ReactForm from "react_form"
+import BootstrapSample from "react_bootstrap"
 
 document.addEventListener("DOMContentLoaded", e => {
   ReactDOM.render(<ReactForm />, document.getElementById('react_form'))
+})
+
+document.addEventListener("DOMContentLoaded", e => {
+  ReactDOM.render(<BootstrapSample />, document.getElementById('react_bootstrap'))
 })
