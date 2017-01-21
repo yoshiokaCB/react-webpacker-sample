@@ -10,6 +10,7 @@ const schema = {
     done: {type: "boolean", title: "Done?", default: false}
   }
 };
+const log = (type) => console.log.bind(console, type);
 
 class ReactForm extends React.Component {
   render() {
@@ -18,5 +19,6 @@ class ReactForm extends React.Component {
     );
   }
 }
+
 
 export default ReactForm;
