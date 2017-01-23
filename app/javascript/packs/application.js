@@ -13,16 +13,24 @@ import ReactForm from "react_form"
 import BootstrapSample from "react_bootstrap"
 import MatelialUi from "material_ui"
 
-document.addEventListener("DOMContentLoaded", e => {
-  ReactDOM.render(<ReactForm />, document.getElementById('react_form'))
-})
+// document.addEventListener("DOMContentLoaded", e => {
+//   ReactDOM.render(<ReactForm />, document.getElementById('react_form'))
+// })
+//
+// document.addEventListener("DOMContentLoaded", e => {
+//   ReactDOM.render(<BootstrapSample />, document.getElementById('react_bootstrap'))
+// })
+//
+
+const react_dom_try_render = (component, selector_id) => {
+  const selector = document.getElementById(selector_id);
+  if(selector != null) ReactDOM.render(component, selector)
+}
 
 document.addEventListener("DOMContentLoaded", e => {
-  ReactDOM.render(<BootstrapSample />, document.getElementById('react_bootstrap'))
-})
-
-document.addEventListener("DOMContentLoaded", e => {
-  ReactDOM.render(<MatelialUi />, document.getElementById('react_material_ui'))
+  react_dom_try_render(<BootstrapSample />,'react_bootstrap')
+  react_dom_try_render(<ReactForm />, 'react_form')
+  react_dom_try_render(<MatelialUi />, 'react_material_ui')
 })
 
 
