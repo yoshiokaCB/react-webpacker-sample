@@ -11,6 +11,7 @@ import ReactDOM from 'react-dom'
 
 import ReactForm from "react_form"
 import BootstrapSample from "react_bootstrap"
+import MatelialUi from "material_ui"
 
 document.addEventListener("DOMContentLoaded", e => {
   ReactDOM.render(<ReactForm />, document.getElementById('react_form'))
@@ -19,3 +20,28 @@ document.addEventListener("DOMContentLoaded", e => {
 document.addEventListener("DOMContentLoaded", e => {
   ReactDOM.render(<BootstrapSample />, document.getElementById('react_bootstrap'))
 })
+
+document.addEventListener("DOMContentLoaded", e => {
+  ReactDOM.render(<MatelialUi />, document.getElementById('react_material_ui'))
+})
+
+
+// import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// import RaisedButton from 'material-ui/RaisedButton'
+//
+// const MyAwesomeReactComponent = () => (
+//   <RaisedButton label="Default" />
+// );
+//
+// const App = () => (
+//   <MuiThemeProvider>
+//     <MyAwesomeReactComponent />
+//   </MuiThemeProvider>
+// );
+//
+// document.addEventListener("DOMContentLoaded", e => {
+//   ReactDOM.render(
+//     <App />,
+//     document.getElementById('react_material_ui')
+//   );
+// })
