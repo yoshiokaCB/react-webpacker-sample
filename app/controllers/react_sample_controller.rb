@@ -8,6 +8,6 @@ class ReactSampleController < ApplicationController
   def bootstrap
   end
 
-  def toolbox
+  def material_ui
   end
 end

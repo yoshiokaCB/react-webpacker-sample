@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'react_sample/bootstrap'
 
-  get 'react_sample/toolbox'
+  get 'react_sample/material_ui'
 
   get 'pages/index'
 
