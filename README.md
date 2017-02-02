@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+使用方法
 
-Things you may want to cover:
+```
+$ git clone https://github.com/yoshiokaCB/react-webpacker-sample.git
+$ cd react-webpacker-sample
+$ bundle
+$ bin/yarn install
 
-* Ruby version
+# rails サーバ起動
+$ rails s
 
-* System dependencies
+# タスクランナー起動
+$ bin/webpack-dev-server
 
-* Configuration
+```
 
-* Database creation
+以下、アクセスして表示を確認する。
 
-* Database initialization
+### React-Bootstrap
+http://localhost:3000/react_sample/bootstrap
 
-* How to run the test suite
+### react-jsonschema-form
+http://localhost:3000/react_sample/form
 
-* Services (job queues, cache servers, search engines, etc.)
+### Material-UI
+http://localhost:3000/react_sample/material_ui
 
-* Deployment instructions
 
-* ...
+それぞれ、`/app/javascript/` 以下にファイルが置かれているので、それぞれ変更を加えて動きを確認する。
