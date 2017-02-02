@@ -1,6 +1,9 @@
 # README
 
-使用方法
+webpackerの使用方法については以下のサイトを確認。
+http://qiita.com/yoshiokaCB/items/564ed0440f0428c0009a
+
+## 使用方法
 
 ```
 $ git clone https://github.com/yoshiokaCB/react-webpacker-sample.git
