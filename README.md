@@ -3,6 +3,8 @@
 webpackerの使用方法については以下のサイトを確認。
 http://qiita.com/yoshiokaCB/items/564ed0440f0428c0009a
 
+注）yarnがインストールされていることが前提条件です。
+
 ## 使用方法
 
 ```
