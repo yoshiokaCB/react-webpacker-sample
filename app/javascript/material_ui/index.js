@@ -26,12 +26,14 @@ import {
   grey50
 } from 'material-ui/styles/colors';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 const MyAwesomeReactComponent = () => (
   <RaisedButton label="Default" />
 );
 const iconStyles = {
-  // marginRight: 24,
+  marginRight: 24,
 };
 const HomeIcon = (props) => (
   <SvgIcon {...props}>
@@ -47,11 +49,11 @@ const SvgIconExampleSimple = () => (
   </div>
 );
 
-
 const handleTouchTap = () => {
   alert('triggered on the title component');
 }
 
+// cssのプロパティーはキャメルケースで記述
 const styles = {
   title: {
     cursor: 'pointer',
@@ -69,12 +71,18 @@ const styles = {
   },
 };
 
+const customStyle = getMuiTheme({
+  appBar: {
+    height: 50,
+  },
+});
+
 const App = React.createClass({
   render () {
     return (
       <div style={styles.divStyle}>
         <AppBar
-          style={styles.appBar, styles.marginBottom}
+          style={styles.marginBottom}
           title={<span style={styles.title}>sample</span>}
           onTitleTouchTap={handleTouchTap}
           iconElementLeft={<IconButton><SvgIconExampleSimple /></IconButton>}
@@ -85,19 +93,12 @@ const App = React.createClass({
           title={<span style={styles.title}>タイトル</span>}
           onTitleTouchTap={handleTouchTap}
           iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-          iconElementRight={<FlatButton label="Save" />}
+          iconElementRight={<FlatButton label="Save" onTouchTap={handleTouchTap} />}
         />
       </div>
     )
   }
 })
-
-const customStyle = getMuiTheme({
-  appBar: {
-    height: 50,
-  },
-});
-
 
 const AppBox = () => (
   <MuiThemeProvider muiTheme={getMuiTheme(customStyle)}>

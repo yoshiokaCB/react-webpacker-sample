@@ -59,7 +59,13 @@ const log = (type) => console.log.bind(console, type);
 class ReactForm extends React.Component {
   render() {
     return (
-      <Form schema={schema} uiSchema={uiSchema} onChange={log("changed")} onSubmit={log("submitted")} onError={log("errors")} />
+      <Form
+        schema={schema}
+        uiSchema={uiSchema}
+        onChange={log("changed")}
+        onSubmit={log("submitted")}
+        onError={log("errors")}
+      />
     );
   }
 }
